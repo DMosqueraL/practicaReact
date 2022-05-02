@@ -23,11 +23,14 @@ function TodoForm() {
 
   return (
     <form onSubmit={onSubmit}>
-      <label>Escribe tu nuevo TODO</label>
+      <label>Escribe una nueva tarea</label>
       <textarea
         value={newTodoValue}
+        /*Mejora 1: 'required' permite que no se agreguen tareas en blanco
+        obligando al usuario a escribir una tarea o cancelar dicha acción*/
+        required 
         onChange={onChange}
-        placeholder="Cortar la cebolla oara el almuerzo"
+        placeholder="¡Qué deseo hacer!"
       />
       <div className="TodoForm-buttonContainer">
         <button
@@ -41,7 +44,7 @@ function TodoForm() {
           type="submit"
           className="TodoForm-button TodoForm-button--add"
         >
-          Añadir
+          Agregar Tarea
         </button>
       </div>
     </form>
