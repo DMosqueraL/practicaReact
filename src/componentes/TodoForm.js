@@ -26,7 +26,7 @@ function TodoForm() {
       <label>Escribe una nueva tarea</label>
       <textarea
         value={newTodoValue}
-        /*Mejora 1: 'required' permite que no se agreguen tareas en blanco
+        /*Mejora: 'required' permite que no se agreguen tareas en blanco
         obligando al usuario a escribir una tarea o cancelar dicha acción*/
         required 
         onChange={onChange}

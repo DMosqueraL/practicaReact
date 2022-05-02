@@ -7,6 +7,7 @@ import { TodoItem } from '../componentes/TodoItem';
 import { TodoForm } from '../componentes/TodoForm';
 import { CreateTodoButton } from '../componentes/CreateTodoButton';
 import { Modal } from '../componentes/Modal';
+import Encabezado from '../componentes/Encabezado'
 
 function AppUI() {
   const {
@@ -21,6 +22,9 @@ function AppUI() {
   
   return (
     <React.Fragment>
+      <Encabezado
+      titulo="Lista de Tareas"
+      categoria="Programación" />
       <TodoCounter />
       <TodoSearch />
 
