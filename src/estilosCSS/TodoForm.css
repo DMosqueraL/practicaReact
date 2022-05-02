@@ -7,20 +7,21 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 label {
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  color: #1E1E1F;
+  color: #12125b;
   margin-bottom: 26px;
 }
 
 textarea {
   background-color: #F9FBFC;
-  border: 2px solid #202329;
-  border-radius: 2px;
+  border: 2px solid #150e11;
+  border-radius: 5px;
   box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
   color: #1E1E1F;
   font-size: 20px;
@@ -38,6 +39,7 @@ textarea::placeholder {
 
 textarea:focus {
   outline-color: #61DAFA;
+  
 }
 
 .TodoForm-buttonContainer {
@@ -46,6 +48,7 @@ textarea:focus {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  
 }
 
 .TodoForm-button {
@@ -53,10 +56,10 @@ textarea:focus {
   display: inline-block;
   font-size: 20px;
   color: #202329;
-  font-weight: 400;
+  font-weight: 600;
   width: 120px;
   height: 48px;
-  border-radius: 2px;
+  border-radius: 20px;
   border: none;
   font-family: 'Montserrat';
 }
@@ -68,4 +71,5 @@ textarea:focus {
 
 .TodoForm-button--cancel {
   background: transparent;
+  border : 2px solid #202329;
 }

@@ -1,5 +1,7 @@
 import React from 'react';
 import '../estilosCSS/TodoItem.css';
+import { RiDeleteBin5Fill } from "react-icons/ri";
+import { GrCheckmark } from "react-icons/gr";
 
 function TodoItem(props) {
   return (
@@ -8,7 +10,7 @@ function TodoItem(props) {
         className={`Icon Icon-check ${props.completed && 'Icon-check--active'}`}
         onClick={props.onComplete}
       >
-        √
+        <GrCheckmark className='tarea-icono' />        
       </span>
       <p className={`TodoItem-p ${props.completed && 'TodoItem-p--complete'}`}>
         {props.text}
@@ -17,9 +19,10 @@ function TodoItem(props) {
         className="Icon Icon-delete"
         onClick={props.onDelete}
       >
-        X
+        <RiDeleteBin5Fill className='tarea-icono' />        
       </span>
     </li>
+    
   );
 }
 

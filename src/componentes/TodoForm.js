@@ -44,7 +44,7 @@ function TodoForm() {
           type="submit"
           className="TodoForm-button TodoForm-button--add"
         >
-          Agregar Tarea
+          Agregar
         </button>
       </div>
     </form>

@@ -7,14 +7,15 @@
   font-size: 50px;
   position: fixed;
   bottom: 24px;
-  right: 24px;
+  top: 330px;
+  right: 4%;
   font-weight: bold;
   color: #FAFAFA;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 64px;
-  width: 64px;
+  height: 50px;
+  width: 50px;
 
   transform: rotate(0);
   transition: .3s ease;

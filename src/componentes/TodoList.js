@@ -4,9 +4,9 @@ import '../estilosCSS/TodoList.css'
 function TodoList(props) {
   return (
     <section>
-      <ul>
+      <ol>
         {props.children}
-      </ul>
+      </ol>
     </section>
   );
 }
