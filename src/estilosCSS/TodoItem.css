@@ -6,17 +6,26 @@
   align-items: center;
   margin-top: 24px;
   box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+  width : 90%;
+  margin-left: 35px;
 }
 
 .TodoItem-p {
   margin: 24px 0 24px 24px;
-  width: calc(100% - 120px);
+  width: calc(100% - 100px);
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
 }
 .TodoItem-p--complete {
   text-decoration: line-through;
+  background-color: rgb(105, 221, 105);
+}
+
+.todo input[type="checkbox"] {
+  transform: scale(1.8) translateY(1px);
+  margin: 0 16px 0 0;
+  cursor: pointer;
 }
 
 .Icon {
@@ -34,10 +43,20 @@
 .Icon-check {
   position: absolute;
   left: 12px;
-  color:antiquewhite;
+  /* color:rgb(184, 59, 14); */
+  transform: scale(0.5) translateY(1px);
 }
 .Icon-check--active {
   color: #4caf50;
+}
+
+.Icon-edit{
+  position: absolute;
+  right: 30px;
+}
+
+.Icon-edit:hover{
+  color: rgb(234, 137, 9);
 }
 
 .Icon-delete {

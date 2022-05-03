@@ -16,6 +16,7 @@ function AppUI() {
     searchedTodos,
     completeTodo,
     deleteTodo,
+    editTodo,
     openModal,
     setOpenModal,
   } = React.useContext(TodoContext);
@@ -25,12 +26,10 @@ function AppUI() {
       <Encabezado titulo="Lista de Tareas" categoria="Programación" />
       <TodoCounter />
       <TodoSearch />
-
       <TodoList>
         {error && <p>Desespérate, hubo un error...</p>}
         {loading && <p>Estamos cargando, no desesperes...</p>}
         {!loading && !searchedTodos.length && <p>¡Crea tu primera TAREA!</p>}
-
         {searchedTodos.map((todo) => (
           <TodoItem
             key={todo.text}
@@ -38,6 +37,7 @@ function AppUI() {
             completed={todo.completed}
             onComplete={() => completeTodo(todo.text)}
             onDelete={() => deleteTodo(todo.text)}
+            onEdit= {() => editTodo(todo.text)}
           />
         ))}
       </TodoList>
