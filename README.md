@@ -1,6 +1,8 @@
-Trabajando en el código base del coach
+_Práctica React - Mejoramiento del proyecto
 
-Se realizaron las siguientes mejoras al código.
+Trabajando en el código base del coach @EdgarSofka: https://github.com/edgarsofka/crud-REACT-localStore
+
+A dicho proyecto, se le realizaron las siguientes mejoras:
 
 Encabezado de presentación
 Se le agrega un componente nuevo 'Encabezado' donde se podrá personalizar más la página de tareas
@@ -16,13 +18,20 @@ Se evitó que se agregarán tareas vacías o en blanco. Haciendo obligatorio esc
 
 ![image](https://user-images.githubusercontent.com/97240171/166392461-e412e0fa-7226-4b55-a4bf-21a7923c5951.png)
 
-Se agreagaron los checkbox para tareas completadas y los íconos editar y eliminar para cada tarea
+Se agreagaron los checkbox para tareas completadas y los funciones (representadas por íconos) editar y eliminar para cada tarea
 
 ![image](https://user-images.githubusercontent.com/97240171/166393074-b0abad01-592c-4ff2-a90a-5876801ba7ef.png)
 
 Además, del checkbox, la tarea será resaltada para mejor apreciación por parte del usuario
 
 ![image](https://user-images.githubusercontent.com/97240171/166393235-0c0d0d6d-c70a-492b-9f7b-f44e0e2133a8.png)
+
+Entre otras de las mejoras, no de manera funcional sino organizacional, la reestructuración de las carpetas y archivos del proyecto. Todos los componentes quedaron en la carpeta componentes y sus nombres (index.js) fueron renombrados por cada tipo de componente creado. Del mismo modo con los archivos de estilos CSS para cada componente.
+
+![image](https://user-images.githubusercontent.com/97240171/166454034-25abc4db-3a73-4313-aac5-b9937169647a.png)
+
+Hay más mejoras en proceso...
+
 
 
 
